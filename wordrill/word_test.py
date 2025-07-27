@@ -1,7 +1,7 @@
 # Wordrill © 2025 by Peter Lényi is licensed under GNU GPL v3
 # License: https://www.gnu.org/licenses/gpl-3.0.html
 
-from prog.word import test_target_word
+from wordrill.word import test_target_word
 
 EASY_MODE = "EASY"
 HARD_MODE = "HARD"

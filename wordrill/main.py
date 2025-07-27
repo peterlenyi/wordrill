@@ -1,9 +1,9 @@
 # Wordrill © 2025 by Peter Lényi is licensed under GNU GPL v3
 # License: https://www.gnu.org/licenses/gpl-3.0.html
 
-from info import get_copy_text, get_help_text
-from load import load_information_dictionary, load_translation_dictionary
-from word import test_target_word, pick_source_word
+from wordrill.info import get_copy_text, get_help_text
+from wordrill.load import load_information_dictionary, load_translation_dictionary
+from wordrill.word import test_target_word, pick_source_word
 
 
 def info_loop():

@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.0.5 (2025-07-27)
+
+Fix: raising intermittent import errors
+- (app) 
+
 ## 1.0.4 (2025-07-27)
 
 Fix: not parsing comments in dictionaries
