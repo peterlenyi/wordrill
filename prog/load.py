@@ -22,6 +22,8 @@ def parse_information_dictionary(text) -> dict:
     dictionary = {}
 
     for line in text.splitlines():
+        if line.startswith("#") or line.startswith(";"):
+            continue
         if '=' in line:
             key, value = line.split('=', 1)
             dictionary[key.strip()] = value.strip()
@@ -45,6 +47,8 @@ def parse_translation_dictionary(text) -> dict:
     dictionary = {}
 
     for line in text.splitlines():
+        if line.startswith("#") or line.startswith(";"):
+            continue
         if '=' in line:
             key, values = line.split('=', 1)
             values_list = [value.strip() for value in values.split(',')]

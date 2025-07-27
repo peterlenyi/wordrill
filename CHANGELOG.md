@@ -1,28 +1,34 @@
 # Changelog
 
+## 1.0.4 (2025-07-27)
+
+Fix: not parsing comments in dictionaries
+- (fun) Ignore line-level comments in dictionaries (# and ;)
+
 ## 1.0.3 (2025-07-27)
 
-Fix:
+Fix: looking for dictionaries in wrong folders
 - (fun) Look for dictionaries in the user config dir
+- (fun) Use the OS-specific user config dir
 
 ## 1.0.2 (2025-07-27)
 
-Fix:
-- (fun) broken imports in test modules
+Fix: using wrong imports in test modules 
+- (fun) Use absolute imports in test modules
 
 ## 1.0.1 (2025-07-27)
 
-Fix:
-- (fun) load_translation_dictionary using wrong parser
+Fix: using wrong parser for translation dictionary
+- (fun) Use the translation dictionary parser
 
 ## 1.0.0 (2025-07-14)
 
-New:
-- (fun) print copyright statement on startup
+New: Wordrill 1.0.0
+- (fun) Print the copyright statement on startup
 - (fun) Prompt user for instructions in a loop
 - (fun) Exit the application on /exit command
 - (fun) Show the help text on /help command 
-- (fun) Switch to test loop on /test command
+- (fun) Start the test loop on /test command
 - (fun) Load dictionaries per selected locales in test loop
 - (fun) Switch to easy mode on /easy command in test loop
 - (fun) Switch to hard mode on /hard command in test loop
