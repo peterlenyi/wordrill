@@ -1,7 +1,7 @@
 # Wordrill © 2025 by Peter Lényi is licensed under GNU GPL v3
 # License: https://www.gnu.org/licenses/gpl-3.0.html
 
-from load import parse_information_dictionary, parse_translation_dictionary
+from prog.load import parse_information_dictionary, parse_translation_dictionary
 
 
 def test_parse_information_dictionary():
