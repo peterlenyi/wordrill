@@ -22,6 +22,11 @@ Wordrill is a command-line Python application. It requires Python 3.11 or later.
 3. Download dictionaries ([link](https://github.com/peterlenyi/wordrill-dictionaries))
 4. Run `./wordrill.sh`
 
+Dictionaries must be installed in the user's configuration directory; that is:
+* GNU/Linux: `/home/$USER/.config/wordrill/`
+* Windows: `C:\Users\$USER\AppData\Local\wordrill\ `
+* macOS: `/Users/$USER/Library/Application Support/wordrill/`
+
 Once Wordrill is running, you control it by typing in the following commands:
 * `/exit` ... exit the application
 * `/help` ... show this help text
