@@ -5,4 +5,4 @@
 
 set -e
 DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-exec env -C "$DIR" python3 -m prog.main "$@"
+exec env -C "$DIR" python3 -m wordrill.main "$@"
