@@ -20,13 +20,26 @@ def load_information_dictionary(locale) -> dict:
 
 def parse_information_dictionary(text) -> dict:
     dictionary = {}
+    last_key = None
 
     for line in text.splitlines():
-        if line.startswith("#") or line.startswith(";"):
+
+        if line.strip() == "":
+            last_key = None
             continue
+
+        if line.strip().startswith(("#", ";", "[")):
+            last_key = None
+            continue
+
         if '=' in line:
             key, value = line.split('=', 1)
             dictionary[key.strip()] = value.strip()
+            last_key = key.strip()
+            continue
+
+        if last_key:
+            dictionary[last_key] += f"\n{line.strip()}"
 
     return dictionary
 
@@ -45,13 +58,25 @@ def load_translation_dictionary(source, target) -> dict:
 
 def parse_translation_dictionary(text) -> dict:
     dictionary = {}
+    last_key = None
 
     for line in text.splitlines():
-        if line.startswith("#") or line.startswith(";"):
+
+        if line.isspace():
+            last_key = None
             continue
+
+        if line.strip().startswith(("#", ";", "[")):
+            last_key = None
+            continue
+
         if '=' in line:
             key, values = line.split('=', 1)
             values_list = [value.strip() for value in values.split(',')]
             dictionary[key.strip()] = values_list
+            last_key = key.strip()
+            continue
+
+        dictionary[last_key].extend([value.strip() for value in line.split(',')])
 
     return dictionary
