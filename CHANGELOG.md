@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.0.3 (2025-07-27)
+
+Fix:
+- (fun) Look for dictionaries in the user config dir
+
 ## 1.0.2 (2025-07-27)
 
 Fix:
