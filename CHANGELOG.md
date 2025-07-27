@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.0.1 (2025-07-27)
+
+Fix:
+- (fun) load_translation_dictionary using wrong parser
+
 ## 1.0.0 (2025-07-14)
 
 New:
