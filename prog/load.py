@@ -32,7 +32,7 @@ def load_translation_dictionary(source, target) -> dict:
     with open(file_path, 'r', encoding='utf-8') as file:
         text = file.read()
 
-    return parse_information_dictionary(text)
+    return parse_translation_dictionary(text)
 
 
 def parse_translation_dictionary(text) -> dict:

@@ -4,7 +4,7 @@
 
 def get_copy_text() -> str:
     copy_text = "\n"
-    copy_text += "Wordrill © 2025 by Peter Lényi \n"
+    copy_text += "Wordrill 1.0.1 © 2025 by Peter Lényi \n"
     copy_text += "\n"
     copy_text += "This program is free software: you can redistribute it and/or modify \n"
     copy_text += "it under the terms of the GNU General Public License as published by \n"
