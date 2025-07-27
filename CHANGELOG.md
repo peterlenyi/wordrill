@@ -3,7 +3,9 @@
 ## 1.0.5 (2025-07-27)
 
 Fix: raising intermittent import errors
-- (app) 
+- (app) Place source code in a python package
+- (fun) Use absolute imports in all modules
+- (app) Shell script invokes main as a module
 
 ## 1.0.4 (2025-07-27)
 
